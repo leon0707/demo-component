@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import './DemoComponent.css';
-import logo from './logo.svg';
+import logo from './logo.png';
 
 class DemoComponent extends Component {
   constructor(props) {
