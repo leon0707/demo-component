@@ -1,5 +1,6 @@
 const path = require('path');
 const pkg = require('./package.json');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
     entry: "./src/DemoComponent.js",
@@ -32,5 +33,7 @@ module.exports = {
           }
         }
       ]
-    }
+    },
+    target: 'node',
+    externals: [nodeExternals()]
 };
